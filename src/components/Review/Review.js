@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState, useEffect } from 'react';
 import { getDatabaseCart } from '../../utilities/databaseManager';
 import fakeData from '../../fakeData';
 import ReviewItem from '../ReviewItem/ReviewItem';
@@ -9,10 +9,10 @@ const Review = () => {
         const[cart,setCart] = useState([])
 
         const removeProduct = (productkey) => {
-          console.log('remove clicked')
+          console.log('remove clicked',);
         }
 
-      useEffect(()=>{
+       useEffect (()=>{
         // cart  
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart)
