@@ -18,7 +18,11 @@ function App() {
   return (
     <div>
     <Header />
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 4bcc1d47d2905fa5567e57b813e03a802c14af72
     <Router>
       <Switch>
         <Route exact path="/">
